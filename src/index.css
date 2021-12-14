@@ -1,6 +1,5 @@
 :root {
     /* dark shades of primary color*/
-    --clr-primary-1: hsl(205, 86%, 17%);
     --clr-primary-2: hsl(205, 77%, 27%);
     --clr-primary-3: hsl(205, 72%, 37%);
     --clr-primary-4: hsl(205, 63%, 48%);
@@ -10,10 +9,6 @@
     --clr-grey-6: hsl(210, 31%, 80%);
     --clr-grey-7: hsl(212, 33%, 89%);
     --transition: all 0.3s linear;
-    --spacing: 0.1rem;
-    --radius: 0.25rem;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     --max-width: 1170px;
     --fixed-width: 920px;
 }
@@ -115,6 +110,16 @@ p {
     transition: all 0.2s ease-out;
 }
 
+.nav-btn {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 7px;
+}
+
+.nav-btn:hover {
+    background-color: var(--clr-grey-6);
+}
+
 .menu-icons {
     display: none;
 }
@@ -185,6 +190,16 @@ p {
     color: #fff;
     font-size: 30px;
     margin-top: -150px;
+}
+
+.show-btn {
+    padding: 5px;
+    background-color: var(--clr-grey-6);
+    border-radius: 10px;
+}
+
+.show-btn:hover {
+    background-color: var(--clr-grey-7);
 }
 
 @media screen and (min-width: 768px) {
@@ -332,9 +347,16 @@ p {
     background: url('./Component/Pages/img-9.jpg') center center/cover no-repeat;
     text-align: center;
     width: 100%;
-    height: 300px;
+    height: 60vh;
     display: flex;
     align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .about-title {
+        width: 100%;
+        height: 80vh;
+    }
 }
 
 .about-us p {
@@ -355,11 +377,21 @@ p {
     background: url('./Component/Pages/img-6.jpg');
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 60vh;
     align-items: center;
     display: flex;
     padding-left: 10px;
     color: whitesmoke;
+}
+
+@media only screen and (min-width: 1024px) {
+    .service-title {
+        /* background: url('./Component/Pages/Goa.jpg'); */
+        /* background-size: cover; */
+        width: 100%;
+        height: 80vh;
+        /* color: var(--clr-white); */
+    }
 }
 
 .content p {
@@ -420,6 +452,15 @@ Form {
     top: 20%;
 }
 
+@media only screen and (max-width: 700px) {
+    Form {
+        /* position: absolute;
+        top: 30%;
+        left: 25%; */
+        display: none;
+    }
+}
+
 Form div {
     display: flex;
     flex-direction: column;
@@ -438,4 +479,40 @@ Form div {
 
 .btn-sub:hover {
     background-color: white;
+}
+
+
+/* package// */
+
+.pack-title {
+    background: url('./Component/Pages/tour.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    color: var(--clr-black);
+}
+
+@media only screen and (min-width: 1024px) {
+    .pack-title {
+        background: url('./Component/Pages/Goa.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        color: var(--clr-white);
+    }
+}
+
+.package p {
+    color: var(--clr-white);
+    font-size: 20px;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
+span {
+    font-size: 30px;
+    color: var(--clr-grey-5);
 }

@@ -10,32 +10,29 @@ const Picture = () => {
                 </div>
                 <div className="pic-list-cont">
                     <ul className="pic-list">
-                       <PictureItems 
-                        src='/Photos.js/img-2.jpg'
+                    <PictureItems 
+                        src='/Photos/k1.jpg'
                         text='Kashmir'
+              path='/packges' />
+                       <PictureItems 
+                        src='/Photos/Kerala.jpeg'
+                        text='Kerala'
+              path='/packges' /> 
+              
+                </ul>
+                <ul className="pic-list">
+                       <PictureItems 
+                        src='/Photos/Nashik.jpg'
+                        text='Nashik'
               path='/packges' /> 
                 <PictureItems 
-                        src='/Photos.js/img-2.jpg'
-                        text='Kashmir'
+                        src='/Photos/k3.jpg'
+                        text='Kasol'
               path='/packges' />
-                <PictureItems 
-                        src='/Photos.js/img-2.jpg'
-                        text='Kashmir'
-              path='/packges' />
-                    </ul>
-                    <ul className="pic-list">
-                       <PictureItems 
-                        src='/Photos.js/img-2.jpg'
-                        text='Kashmir'
-              path='/packges' /> 
-                <PictureItems 
-                        src='/Photos.js/img-2.jpg'
-                        text='Kashmir'
-              path='/packges' />
-                <PictureItems 
-                        src='/Photos.js/img-2.jpg'
-                        text='Kashmir'
-              path='/packges' />
+                {/* <PictureItems 
+                        src='/Photos/shillong.jpg'
+                        text='Shillong'
+              path='/packges' /> */}
                     </ul>
                 </div>
             </div>

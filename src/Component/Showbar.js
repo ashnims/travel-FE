@@ -1,6 +1,5 @@
 import React from 'react'
 import {GiPhotoCamera} from 'react-icons/gi';
-import {MdSlowMotionVideo} from 'react-icons/md';
 
 const Showbar = () => {
     return (
@@ -11,9 +10,9 @@ const Showbar = () => {
             <p>What are you waiting for?</p>
             <div className="show-container">
                <button className='show-btn'>
-                   Our photos <GiPhotoCamera />
+                   Our Photos <GiPhotoCamera />
                </button>
-               <button className='show-btn'>Our Video <MdSlowMotionVideo /> </button>
+               {/* <button className='show-btn'>Our Video <MdSlowMotionVideo /> </button> */}
 
             </div>
             {/* </div> */}
